@@ -47,8 +47,8 @@
                         <div class="px-4 py-5 sm:p-6">
                             <h3 class="text-lg font-semibold">Contact Us</h3>
                             <p class="mt-2">
-                                123456789<br>
-                                123 Main St, Biscoe, NC 28512
+                                <a href="tel+9108284218">(910) 828-4218</a><br> 
+                                151 Montgomery CrossingBiscoe, NC 27209
                             </p>
                         </div>
                     </div>
