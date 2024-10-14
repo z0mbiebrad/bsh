@@ -48,7 +48,7 @@
                             <h3 class="text-lg font-semibold">Contact Us</h3>
                             <p class="mt-2">
                                 <a href="tel+9108284218">(910) 828-4218</a><br> 
-                                151 Montgomery CrossingBiscoe, NC 27209
+                                151 Montgomery Crossing, Biscoe, NC 27209
                             </p>
                         </div>
                     </div>
