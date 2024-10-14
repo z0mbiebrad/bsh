@@ -25,8 +25,8 @@
 
         <div class="mx-auto max-w-7xl flex flex-col items-center mb-5">
             <div class="z-10 bg-gray-900/80 rounded-3xl max-w-5xl px-32 py-6">
-                <div class="mx-auto max-w-2xl lg:mx-0 text-center z-20">
-                    <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">About Us</h2>
+                <div class="mx-auto max-w-2xl lg:mx-0 z-20 mb-8">
+                    <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl text-center">About Us</h2>
                     <p class="mt-6 text-lg leading-8 text-white">Welcome to Biscoe Smoke House, your one-stop shop for
                         all things counter-culture in Biscoe, North Carolina! From THC-A, tobacco, and vapes to a wide
                         variety of accessories, we carry everything you could imagine. Whether you're looking for the
