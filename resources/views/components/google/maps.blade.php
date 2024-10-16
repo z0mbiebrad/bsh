@@ -15,7 +15,7 @@
             </div>
             <div class="flex justify-items-center">
                 <a aria-label="Get directions to this location on Google Maps." target="_blank"
-                    href="comgooglemaps://?daddr=151+Montgomery+Crossing+Biscoe,+NC+27209&directionsmode=driving">
+                    href="https://maps.google.com/?daddr=151+Montgomery+Crossing+Biscoe,+NC+27209">
                     <div class="icon navigate-icon"></div>
                     <div class="navigate-text">
                         <x-svg.arrow />
