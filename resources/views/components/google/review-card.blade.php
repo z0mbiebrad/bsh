@@ -1,4 +1,4 @@
-<div class="mx-auto max-w-7xl">
+<div class="mx-auto max-w-7xl basis-full w-11/12">
     <div class="relative overflow-hidden bg-gray-900 shadow-xl rounded-3xl p-5">
         <img class="absolute inset-0 h-full w-full object-cover brightness-150 saturate-0"
             src="{{ asset('images/matthew-brodeur-qcCPIhhdgTw-unsplash.jpg') }}" alt="">
