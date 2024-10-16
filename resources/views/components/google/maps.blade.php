@@ -5,7 +5,7 @@
                 <img class="h-10" src="{{ asset('images/Google__G__logo.png') }}" alt="">
                 <div>
                     <a
-                        href="https://maps.app.goo.gl/CsTH83MEpAB483Cw5?g_st=im"><span
+                        href="https://www.google.com/maps/place/BISCOE+SMOKE+HOUSE/@35.357699,-79.795603,16z/data=!4m6!3m5!1s0x88549905fdb434c9:0xf3cc969cd07ad16c!8m2!3d35.357699!4d-79.7956034!16s%2Fg%2F11b6vc5pxr?hl=en-US&entry=ttu&g_ep=EgoyMDI0MTAxNC4wIKXMDSoASAFQAw%3D%3D"><span
                             class="text-sm font-medium">SMOKE HOUSE</span></a>
                     <div class="flex items-center mt-1">
                         <x-svg.star />
@@ -15,7 +15,7 @@
             </div>
             <div class="flex justify-items-center">
                 <a aria-label="Get directions to this location on Google Maps." target="_blank"
-                    href="https://maps.app.goo.gl/CsTH83MEpAB483Cw5?g_st=im">
+                    href="maps://maps.app.goo.gl/CsTH83MEpAB483Cw5?g_st=im">
                     <div class="icon navigate-icon"></div>
                     <div class="navigate-text">
                         <x-svg.arrow />
