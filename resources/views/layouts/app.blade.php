@@ -8,25 +8,16 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-
-    <!-- Scripts -->
-    {{-- <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYsD1WmisMktKWysivNoodOQq1n_wsLT0&libraries=maps,marker&v=beta&loading=async"
-    defer
-></script> --}}
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9ohF1QT0thRvSdARsYFEFnJXEEbtxbYU&libraries=places,marker&callback=initMap&v=beta&loading=async"></script>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body class="font-sans antialiased">
     <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
-        @include('layouts.navigation')
-
         <!-- Page Heading -->
         @isset($header)
             <header class="bg-white dark:bg-gray-800 shadow">
