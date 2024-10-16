@@ -24,7 +24,7 @@
                                     <path fill="#ffffff"
                                         d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
                                 </svg>
-                                <a href="tel+9108284218" class="underline ml-2">(910) 828-4218</a><br>
+                                <a href="tel:9108284218" class="underline ml-2">(910) 828-4218</a><br>
                             </div>
                             <div class="flex items-center">
                                 <svg class="h-4" xmlns="http://www.w3.org/2000/svg"
@@ -33,8 +33,10 @@
                                         d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480l0-162.9c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9L192 480c0 17.7-14.3 32-32 32s-32-14.3-32-32z" />
                                 </svg>
                                 <a aria-label="Get directions to this location on Google Maps." target="_blank"
-                                    href="maps://maps.google.com/maps/dir/?api=1&destination=151+Montgomery+Crossing+Biscoe,+NC+27209">
-                                    Get Directions
+                                    href="comgooglemaps://?daddr=151+Montgomery+Crossing+Biscoe,+NC+27209&directionsmode=driving">
+                                    <div class="underline ml-2">
+                                        151 Montgomery Crossing
+                                    </div>
                                 </a>
                             </div>
                         </div>
