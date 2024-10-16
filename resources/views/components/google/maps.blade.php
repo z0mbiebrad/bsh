@@ -15,7 +15,7 @@
             </div>
             <div class="flex justify-items-center">
                 <a aria-label="Get directions to this location on Google Maps." target="_blank" jstcache="38"
-                    href="https://maps.google.com/maps/dir//BISCOE+SMOKE+HOUSE+151+Montgomery+Crossing+Biscoe,+NC+27209/@35.357699,-79.7956034,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x88549905fdb434c9:0xf3cc969cd07ad16c">
+                    href="maps://maps.google.com/maps/dir//BISCOE+SMOKE+HOUSE+151+Montgomery+Crossing+Biscoe,+NC+27209/@35.357699,-79.7956034,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x88549905fdb434c9:0xf3cc969cd07ad16c">
                     <div class="icon navigate-icon"></div>
                     <div jstcache="39" class="navigate-text">
                         <x-svg.arrow />
