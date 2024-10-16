@@ -14,10 +14,10 @@
                 </div>
             </div>
             <div class="flex justify-items-center">
-                <a aria-label="Get directions to this location on Google Maps." target="_blank"
-                    href="https://maps.google.com/?daddr=151+Montgomery+Crossing+Biscoe,+NC+27209">
+                <a aria-label="Get directions to this location on Apple Maps." target="_blank"
+                    href="http://maps.apple.com/?daddr=151+Montgomery+Crossing+Biscoe,+NC+27209">
                     <div class="icon navigate-icon"></div>
-                    <div class="navigate-text">
+                    <div class="">
                         <x-svg.arrow />
                         Directions
                     </div>
