@@ -15,7 +15,7 @@
             </div>
             <div class="flex justify-items-center">
                 <a aria-label="Get directions to this location on Google Maps." target="_blank"
-                    href="maps://maps.app.goo.gl/CsTH83MEpAB483Cw5?g_st=im">
+                    href="https://maps.app.goo.gl/CsTH83MEpAB483Cw5?g_st=im">
                     <div class="icon navigate-icon"></div>
                     <div class="navigate-text">
                         <x-svg.arrow />
