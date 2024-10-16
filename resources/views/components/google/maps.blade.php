@@ -14,10 +14,10 @@
                 </div>
             </div>
             <div class="flex justify-items-center">
-                <a aria-label="Get directions to this location on Google Maps." target="_blank" jstcache="38"
-                    href="maps://maps.google.com/maps/dir//BISCOE+SMOKE+HOUSE+151+Montgomery+Crossing+Biscoe,+NC+27209/@35.357699,-79.7956034,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x88549905fdb434c9:0xf3cc969cd07ad16c">
+                <a aria-label="Get directions to this location on Google Maps." target="_blank"
+                    href="maps://maps.google.com/maps/dir/?api=1&destination=151+Montgomery+Crossing+Biscoe,+NC+27209">
                     <div class="icon navigate-icon"></div>
-                    <div jstcache="39" class="navigate-text">
+                    <div class="navigate-text">
                         <x-svg.arrow />
                         Directions
                     </div>
