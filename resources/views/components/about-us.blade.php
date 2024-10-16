@@ -14,8 +14,8 @@
                     <div class="px-4 py-5 sm:p-6">
                         <h3 class="text-lg font-semibold text-center underline">Hours of Service</h3>
                         <p class="my-2">
-                            Monday - Friday:<span class="font-bold"> 7 AM - 10 PM</span><br>
-                            Sunday: <span class="font-bold"> 10 PM - 10 PM</span>
+                            Monday - Friday:<span class="font-bold"> 7 A.M. - 10 P.M.</span><br>
+                            Sunday: <span class="font-bold"> 10 P.M. - 10 P.M.</span>
                         </p>
                         <div>
                             <div class="flex items-center">
@@ -27,17 +27,12 @@
                                 <a href="tel:9108284218" class="underline ml-2">(910) 828-4218</a><br>
                             </div>
                             <div class="flex items-center">
-                                <svg class="h-4" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="h-4 mr-2" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                                     <path fill="#ffffff"
                                         d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480l0-162.9c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9L192 480c0 17.7-14.3 32-32 32s-32-14.3-32-32z" />
                                 </svg>
-                                <a aria-label="Get directions to this location on Google Maps." target="_blank"
-                                    href="https://maps.google.com/?daddr=151+Montgomery+Crossing+Biscoe,+NC+27209">
-                                    <div class="underline ml-2">
-                                        151 Montgomery Crossing
-                                    </div>
-                                </a>
+                                151 Montgomery Crossing
                             </div>
                         </div>
                     </div>

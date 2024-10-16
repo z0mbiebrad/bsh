@@ -1,5 +1,5 @@
 <div class="block md:hidden">
-    <div class="divide-y divide-gray-200 overflow-hidden rounded-lg bg-gray-900 text-white shadow w-11/12 mb-4 mx-auto">
+    <div class="divide-y divide-gray-200 overflow-hidden rounded-3xl bg-gray-900 text-white shadow w-11/12 mb-4 mx-auto">
         <div class="px-4 py-5 sm:px-6 flex justify-between items-baseline">
             <div class="flex items-center space-x-2">
                 <img class="h-10" src="{{ asset('images/Google__G__logo.png') }}" alt="">
@@ -13,15 +13,12 @@
                     </div>
                 </div>
             </div>
-<div id="map-link"></div>
 
             <div class="flex justify-items-center">
-                <a aria-label="Get directions to this location on Apple Maps." target="_blank"
-                    href="http://maps.apple.com/?daddr=151+Montgomery+Crossing+Biscoe,+NC+27209">
                     <div class="icon navigate-icon"></div>
                     <div class="">
                         <x-svg.arrow />
-                        Directions
+                        <div id="map-link"></div>
                     </div>
                 </a>
             </div>
@@ -62,13 +59,13 @@
         // Check if the user is on an iPhone or Android
         if (/iPhone|iPad|iPod/.test(userAgent)) {
             // iOS - Open Apple Maps
-            return `<a aria-label="Get directions to this location on Apple Maps." target="_blank" href="http://maps.apple.com/?daddr=${address}">Get Directions (Apple Maps)</a>`;
+            return `<a aria-label="Get directions to this location on Apple Maps." target="_blank" href="http://maps.apple.com/?daddr=${address}">Directions</a>`;
         } else if (/android/i.test(userAgent)) {
             // Android - Open Google Maps
-            return `<a aria-label="Get directions to this location on Google Maps." target="_blank" href="https://maps.google.com/?daddr=${address}">Get Directions (Google Maps)</a>`;
+            return `<a aria-label="Get directions to this location on Google Maps." target="_blank" href="https://maps.google.com/?daddr=${address}">Directions</a>`;
         } else {
             // Fallback link (optional)
-            return `<a aria-label="Get directions to this location on Google Maps." target="_blank" href="https://maps.google.com/?daddr=${address}">Get Directions (Google Maps)</a>`;
+            return `<a aria-label="Get directions to this location on Google Maps." target="_blank" href="https://maps.google.com/?daddr=${address}">Directions</a>`;
         }
     }
 
