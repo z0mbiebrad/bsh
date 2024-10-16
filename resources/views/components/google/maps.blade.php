@@ -13,6 +13,8 @@
                     </div>
                 </div>
             </div>
+<div id="map-link"></div>
+
             <div class="flex justify-items-center">
                 <a aria-label="Get directions to this location on Apple Maps." target="_blank"
                     href="http://maps.apple.com/?daddr=151+Montgomery+Crossing+Biscoe,+NC+27209">
@@ -48,3 +50,28 @@
         </style>
     </div>
 </div>
+
+<script>
+    // Function to detect the user's device
+    function getMapLink() {
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        // Define the address
+        const address = "151+Montgomery+Crossing+Biscoe,+NC+27209";
+
+        // Check if the user is on an iPhone or Android
+        if (/iPhone|iPad|iPod/.test(userAgent)) {
+            // iOS - Open Apple Maps
+            return `<a aria-label="Get directions to this location on Apple Maps." target="_blank" href="http://maps.apple.com/?daddr=${address}">Get Directions (Apple Maps)</a>`;
+        } else if (/android/i.test(userAgent)) {
+            // Android - Open Google Maps
+            return `<a aria-label="Get directions to this location on Google Maps." target="_blank" href="https://maps.google.com/?daddr=${address}">Get Directions (Google Maps)</a>`;
+        } else {
+            // Fallback link (optional)
+            return `<a aria-label="Get directions to this location on Google Maps." target="_blank" href="https://maps.google.com/?daddr=${address}">Get Directions (Google Maps)</a>`;
+        }
+    }
+
+    // Insert the correct link into the div
+    document.getElementById('map-link').innerHTML = getMapLink();
+</script>
