@@ -1,10 +1,6 @@
 <x-app-layout>
     <x-tailwindui.hero>
-        <x-slot name="reviews">
-            <x-tailwindui.reviews></x-tailwindui.reviews>
-        </x-slot>
-        <x-slot name="maps">
-                        <x-google.maps></x-google.maps>
-        </x-slot>
     </x-tailwindui.hero>
+    <x-tailwindui.review-card></x-tailwindui.review-card>
+    <x-google.maps></x-google>
 </x-app-layout>

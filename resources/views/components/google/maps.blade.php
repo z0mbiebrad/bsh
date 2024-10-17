@@ -1,5 +1,5 @@
-<div class="block md:hidden my-20">
-    <div class="divide-y divide-gray-200 overflow-hidden rounded-3xl bg-gray-900 text-white shadow w-11/12 mb-4 mx-auto">
+<div class="block md:hidden mb-20">
+    <div class="divide-y divide-gray-200 overflow-hidden rounded-3xl bg-black text-white shadow w-11/12 mx-auto">
         <div class="px-4 py-5 sm:px-6 flex justify-between items-baseline">
             <div class="flex items-center space-x-2">
                 <img class="h-10" src="{{ asset('images/Google__G__logo.png') }}" alt="">
