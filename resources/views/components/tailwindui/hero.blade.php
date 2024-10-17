@@ -30,7 +30,7 @@
                     latest in alternative products or just something to relax with, we've got you covered. Stop by
                     and experience the best selection in town!</p>
                 <div class="mt-10 flex items-center justify-center gap-x-6">
-                    <a href="#"
+                    <a href="#thc-a"
                         class="text-lg font-semibold leading-6 text-white rounded-md bg-black/30 px-3.5 py-2.5 shadow-sm hover:bg-black/40"><span
                             class="font-bold">THC-A</span> Menu<span aria-hidden="true">→</span></a>
                 </div>
