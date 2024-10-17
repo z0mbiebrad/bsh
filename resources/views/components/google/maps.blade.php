@@ -1,5 +1,9 @@
-<div class="block md:hidden mb-20">
-    <div class="divide-y divide-gray-200 overflow-hidden rounded-3xl bg-black text-white shadow w-11/12 mx-auto">
+<div class="block md:hidden mt-32">
+    <div
+        class="divide-y divide-gray-200 rounded-3xl text-white shadow w-11/12 mx-auto relative overflow-hidden">
+        <img src="{{ asset('images/weed.jpg') }}" alt=""
+            class="absolute inset-0 h-full w-full object-cover object-left z-[-1]">
+        <div class="absolute inset-0 bg-black opacity-85 z-[-1]"></div>
         <div class="px-4 py-5 sm:px-6 flex justify-between items-baseline">
             <div class="flex items-center space-x-2">
                 <img class="h-10" src="{{ asset('images/Google__G__logo.png') }}" alt="">
@@ -14,12 +18,12 @@
                 </div>
             </div>
 
-            <div class="flex justify-items-center">
-                    <div class="icon navigate-icon"></div>
-                    <div class="">
-                        <x-svg.arrow />
-                        <div id="map-link"></div>
-                    </div>
+            <div class="flex justify-items-center items-baseline">
+                <div class="icon navigate-icon"></div>
+                <div class="">
+                    <x-svg.arrow />
+                    <div id="map-link"></div>
+                </div>
                 </a>
             </div>
         </div>
