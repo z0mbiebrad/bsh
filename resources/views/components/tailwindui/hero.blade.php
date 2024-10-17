@@ -1,4 +1,4 @@
-<div class="bg-gray-900">
+<div class="">
     <header class="absolute inset-x-0 top-0 z-50">
         <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
             <div class="flex lg:flex-1">
@@ -59,7 +59,7 @@
     <div class="relative isolate overflow-hidden pt-14">
         <img src="{{ asset('images/2024-09-18.jpg') }}" alt=""
             class="absolute inset-0 -z-10 h-full w-full object-cover object-left"> 
-        <div class="absolute inset-0 bg-green-950 opacity-80 -z-10"></div>
+        <div class="absolute inset-0 bg-teal-950 opacity-80 -z-10"></div>
         <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
             aria-hidden="true">
             <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
@@ -85,7 +85,7 @@
                     latest in alternative products or just something to relax with, we've got you covered. Stop by
                     and experience the best selection in town!</p>
                 <div class="mt-10 flex items-center justify-center gap-x-6">
-                    <a href="#" class="text-md font-semibold leading-6 text-white">THC-A Menu<span
+                    <a href="#" class="text-lg font-semibold leading-6 text-white">THC-A Menu<span
                             aria-hidden="true">→</span></a>
                 </div>
             </div>
