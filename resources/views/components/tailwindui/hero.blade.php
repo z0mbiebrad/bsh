@@ -10,7 +10,6 @@
             </div>
         </div>
 
-            <x-tailwindui.nav></x-tailwindui.nav>
         <div class="mx-auto max-w-5xl sm:w-11/12 py-32 sm:py-48 lg:py-56">
             {{-- <div class="hidden sm:mb-8 sm:flex sm:justify-center">
                 <div

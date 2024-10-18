@@ -1,4 +1,5 @@
 <x-app-layout>
+
     <x-tailwindui.hero>
     </x-tailwindui.hero>
     <div class="relative overflow-hidden">

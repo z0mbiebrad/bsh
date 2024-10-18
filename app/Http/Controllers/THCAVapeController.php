@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\THCA;
+use App\Models\Vape;
 use Illuminate\Http\Request;
 
-class THCAController extends Controller
+class THCAVapeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +34,7 @@ class THCAController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(THCA $tHCA)
+    public function show(Vape $vape)
     {
         //
     }
@@ -42,7 +42,7 @@ class THCAController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(THCA $tHCA)
+    public function edit(Vape $vape)
     {
         //
     }
@@ -50,7 +50,7 @@ class THCAController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, THCA $tHCA)
+    public function update(Request $request, Vape $vape)
     {
         //
     }
@@ -58,7 +58,7 @@ class THCAController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(THCA $tHCA)
+    public function destroy(Vape $vape)
     {
         //
     }
