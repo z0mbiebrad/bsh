@@ -12,7 +12,7 @@
              </button>
          </div>
          <div class="flex lg:flex-1">
-             <a href="#" class="-m-1.5 p-1.5">
+             <a href="/" class="-m-1.5 p-1.5">
                  <p class="flex text-white items-center font-bold font-serif ml-2">BISCOE
                      <img src="{{ asset('images/weed (1).png') }}" alt="Arrow Icon" class="h-6 w-auto px-3 text-white">
                      SMOKE HOUSE
@@ -31,7 +31,7 @@
          <div
              class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
              <div class="flex items-center justify-between">
-                 <a href="#" class="-m-1.5 p-1.5">
+                 <a href="/" class="-m-1.5 p-1.5">
                      <p class="flex text-white items-center font-bold font-serif">BISCOE
                          <img src="{{ asset('images/weed (1).png') }}" alt="Arrow Icon"
                              class="h-6 w-auto px-3 text-white">

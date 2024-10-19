@@ -13,52 +13,56 @@
         <span class="block sm:inline">{{ session('status') }}</span>
     </div>
 @endif
-
-<form action="{{ route('strain.store') }}" method="post" enctype="multipart/form-data">
+<form action="{{ route('strain.update', $flower) }}" method="post" enctype="multipart/form-data">
     @csrf
+    @method('put')
     <div class="space-y-12 max-w-5xl mx-auto">
         <div class="border-b border-white/10 pb-12">
-            <h2 class="text-base mb-6 font-semibold leading-7 text-white">Add a new flower strain.</h2>
+            <h2 class="text-base mb-6 font-semibold leading-7 text-white">Edit: {{ $flower->strain }}</h2>
             <div class="space-y-6">
                 <fieldset>
                     <label for="type" class="block text-sm font-medium leading-6 text-white">Type</label>
                     <div class="mt-1 space-x-2 flex items-center">
                         <div class="flex items-center gap-x-3">
                             <input value="indica" id="indica" name="type" type="radio"
-                                class="h-4 w-4 border-white/10 bg-white/5 text-indigo-600 focus:ring-indigo-600 focus:ring-offset-gray-900">
+                                class="h-4 w-4 border-white/10 bg-white/5 text-indigo-600 focus:ring-indigo-600 focus:ring-offset-gray-900"
+                                @if ($flower->type == 'indica') checked @endif>
                             <label for="indica" class="block text-sm font-medium leading-6 text-white">Indica</label>
                         </div>
                         <div class="flex items-center gap-x-3">
                             <input value="sativa" id="sativa" name="type" type="radio"
-                                class="h-4 w-4 border-white/10 bg-white/5 text-indigo-600 focus:ring-indigo-600 focus:ring-offset-gray-900">
+                                class="h-4 w-4 border-white/10 bg-white/5 text-indigo-600 focus:ring-indigo-600 focus:ring-offset-gray-900"
+                                @if ($flower->type == 'sativa') checked @endif>
                             <label for="sativa" class="block text-sm font-medium leading-6 text-white">Sativa</label>
                         </div>
                         <div class="flex items-center gap-x-3">
                             <input value="hybrid" id="hybrid" name="type" type="radio"
-                                class="h-4 w-4 border-white/10 bg-white/5 text-indigo-600 focus:ring-indigo-600 focus:ring-offset-gray-900">
+                                class="h-4 w-4 border-white/10 bg-white/5 text-indigo-600 focus:ring-indigo-600 focus:ring-offset-gray-900"
+                                @if ($flower->type == 'hybrid') checked @endif>
                             <label for="hybrid" class="block text-sm font-medium leading-6 text-white">Hybrid</label>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset>
-                    <label for="type" class="block text-sm font-medium leading-6 text-white">Quality</label>
-
+                    <label for="quality" class="block text-sm font-medium leading-6 text-white">Quality</label>
                     <div class="mt-1 space-x-2 flex items-center">
-
                         <div class="flex items-center gap-x-3">
                             <input value="top-shelf" id="top-shelf" name="quality" type="radio"
-                                class="h-4 w-4 border-white/10 bg-white/5 text-indigo-600 focus:ring-indigo-600 focus:ring-offset-gray-900">
+                                class="h-4 w-4 border-white/10 bg-white/5 text-indigo-600 focus:ring-indigo-600 focus:ring-offset-gray-900"
+                                @if ($flower->quality == 'top-shelf') checked @endif>
                             <label for="top-shelf" class="block text-sm font-medium leading-6 text-white">Top
                                 Shelf</label>
                         </div>
                         <div class="flex items-center gap-x-3">
                             <input value="premium" id="premium" name="quality" type="radio"
-                                class="h-4 w-4 border-white/10 bg-white/5 text-indigo-600 focus:ring-indigo-600 focus:ring-offset-gray-900">
+                                class="h-4 w-4 border-white/10 bg-white/5 text-indigo-600 focus:ring-indigo-600 focus:ring-offset-gray-900"
+                                @if ($flower->quality == 'premium') checked @endif>
                             <label for="premium" class="block text-sm font-medium leading-6 text-white">Premium</label>
                         </div>
                         <div class="flex items-center gap-x-3">
                             <input value="exotic" id="exotic" name="quality" type="radio"
-                                class="h-4 w-4 border-white/10 bg-white/5 text-indigo-600 focus:ring-indigo-600 focus:ring-offset-gray-900">
+                                class="h-4 w-4 border-white/10 bg-white/5 text-indigo-600 focus:ring-indigo-600 focus:ring-offset-gray-900"
+                                @if ($flower->quality == 'exotic') checked @endif>
                             <label for="exotic" class="block text-sm font-medium leading-6 text-white">Exotic</label>
                         </div>
                     </div>
@@ -72,8 +76,8 @@
                             <div
                                 class="flex rounded-md bg-white/5 ring-1 ring-inset ring-white/10 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500">
                                 <input type="text" name="strain" id="strain" autocomplete="strain"
-                                    class="flex-1  border-0 bg-transparent py-1.5 pl-1 text-white focus:ring-0 sm:text-sm sm:leading-6"
-                                    placeholder="Blue Dream">
+                                    class="flex-1 border-0 bg-transparent py-1.5 pl-1 text-white focus:ring-0 sm:text-sm sm:leading-6"
+                                    placeholder="Blue Dream" value="{{ old('strain', $flower->strain) }}">
                             </div>
                         </div>
                     </div>
@@ -84,7 +88,7 @@
                                 class="flex rounded-md bg-white/5 ring-1 ring-inset ring-white/10 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500">
                                 <input type="text" name="percentage" id="percentage" autocomplete="percentage"
                                     class="flex-1 border-0 bg-transparent py-1.5 pl-1 text-white focus:ring-0 sm:text-sm sm:leading-6"
-                                    placeholder="22">
+                                    placeholder="22" value="{{ old('percentage', intval($flower->thc_content)) }}">
                             </div>
                         </div>
                     </div>
@@ -106,20 +110,37 @@
                                 <label for="image_upload"
                                     class="relative cursor-pointer rounded-md bg-gray-900 font-semibold text-white focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 focus-within:ring-offset-gray-900 hover:text-indigo-500">
                                     <span>Upload a photo</span>
-                                    <input id="image_upload" name="image_upload" type="file" class="sr-only">
+                                    <input id="image_upload" name="image_upload" type="file" class="sr-only"
+                                        accept="image/*" />
                                 </label>
                                 <p class="pl-1">or drag and drop</p>
                             </div>
-                            <p class="text-xs leading-5 text-gray-400">PNG, JPG, GIF up to 10MB</p>
+                            <p class="text-xs text-gray-500 mt-1">PNG, JPG up to 2MB</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="flex mt-4 space-x-6">
+                <fieldset>
+                    <legend class="text-sm font-semibold leading-6 text-white">Out of stock?</legend>
+                    <div class="mt-1 space-x-2 flex items-center">
+                        <div class="flex items-center gap-x-3">
+                            <input type="hidden" name="available" value="1">
+                            <input id="out-of-stock" name="available" type="checkbox" value="0"
+                                class="h-4 w-4 border-white/10 bg-white/5 text-indigo-600 focus:ring-indigo-600 focus:ring-offset-gray-900"
+                                @if (!$flower->available) checked @endif>
+                            <label for="out-of-stock" class="block text-sm font-medium leading-6 text-white">
+                                <x-svg.cancel></x-svg.cancel>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
         </div>
-    </div>
 
-    <div class="mt-6 flex items-center justify-end gap-x-6">
-        <button type="submit"
-            class="rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Save</button>
+        <div class="flex justify-end">
+            <button type="submit"
+                class="inline-block rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm ring-1 ring-white/10 hover:ring-white/20">Save</button>
+        </div>
     </div>
 </form>

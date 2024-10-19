@@ -17,7 +17,7 @@
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('thca-menu')">
+                    <x-nav-link :href="route('strain.index')" :active="request()->routeIs('strain.index')">
                         {{ __('THC-A Menu') }}
                     </x-nav-link>
                 </div>
@@ -51,6 +51,9 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('home')" :active="request()->routeIs('home')">
                 {{ __('Home') }}
+            </x-responsive-nav-link>
+                 <x-responsive-nav-link :href="route('strain.index')" :active="request()->routeIs('strain.index')">
+                {{ __('THC-A Menu') }}
             </x-responsive-nav-link>
             @auth
                 <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">

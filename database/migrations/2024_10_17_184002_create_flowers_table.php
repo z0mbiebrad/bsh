@@ -24,7 +24,6 @@ return new class extends Migration
             $table->string('image_url')->nullable();
             $table->boolean('available')->default(true);
             $table->integer('quantity')->default(0)->nullable();
-            $table->boolean('star')->default(false)->nullable();
 
             $table->timestamps();
         });
