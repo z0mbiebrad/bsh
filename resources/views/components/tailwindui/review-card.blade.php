@@ -22,32 +22,31 @@
                       
                     </figure>
             </div>
-            <div
-                class="flex flex-col border-t border-white/10 pt-10 sm:pt-16 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0 xl:pl-20">
-                    <figure class="mt-10 flex flex-auto flex-col justify-between">
-                        <blockquote class="text-lg leading-8 text-white">
-                            <p>
-                                I had an incredible experience at Smoke House in Biscoe, NC, thanks to Abdul! His
-                                professionalism
-                                was outstanding, making the entire shopping experience smooth and enjoyable. What
-                                really
-                                blew me
-                                away were the amazing prices—great deals that you just can't beat. Abdul was
-                                knowledgeable,
-                                friendly, and genuinely cared about making sure I left happy. I highly recommend
-                                stopping by Smoke
-                                House and asking for Abdul if you're looking for excellent service and unbeatable
-                            </p>
-                        </blockquote>
-                        <figcaption class="mt-10 flex items-center gap-x-6">
-                            <div class="text-base">
-                                <div class="font-semibold text-white">Seth Ware</div>
-                                <div class="mt-1 text-gray-400">September 16, 2024</div>
-                <x-svg.stars></x-svg>
-                            </div>
-                        </figcaption>
-                    </figure>
-            </div>
+            <div class="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:pr-20">
+                <figure class="mt-10 flex flex-auto flex-col justify-between">
+                    <blockquote class="text-lg leading-8 text-white">
+                          <figcaption class="mt-10 flex items-center gap-x-6">
+                        <div class="text-base">
+                            <div class="font-semibold text-white">Seth Ware</div>
+                            <div class="mt-1 text-gray-400">September 16, 2024</div>
+            <x-svg.stars></x-svg>
+                        </div>
+                    </figcaption>
+                        <p>
+                            I had an incredible experience at Smoke House in Biscoe, NC, thanks to Abdul! His
+                            professionalism
+                            was outstanding, making the entire shopping experience smooth and enjoyable. What
+                            really
+                            blew me
+                            away were the amazing prices—great deals that you just can't beat. Abdul was
+                            knowledgeable,
+                            friendly, and genuinely cared about making sure I left happy. I highly recommend
+                            stopping by Smoke
+                            House and asking for Abdul if you're looking for excellent service and unbeatable
+                        </p>
+                    </blockquote>
+                  
+                </figure>
         </div>
     </div>
 </section>

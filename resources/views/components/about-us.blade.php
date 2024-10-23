@@ -5,7 +5,7 @@
                 <div class="px-14 pb-14 sm:p-6">
                     <h3 class="text-xl font-semibold text-center underline">Hours of Service</h3>
                     <p class="my-2 text-center text">
-                        Mon - Fri:<span class="font-bold"> 7 A.M. - 10 P.M.</span><br>
+                        Mon - Sat:<span class="font-bold"> 7 A.M. - 10 P.M.</span><br>
                         Sunday: <span class="font-bold"> 10 P.M. - 10 P.M.</span>
                     </p>
                     <div class="text-center">
