@@ -21,7 +21,7 @@
                             </button>
                         </div>
                     @endauth
-                    <img class="mx-auto h-32 w-32 flex-shrink-0 rounded-lg" src="{{ asset($strain->image_url) }}"
+                    <img class="mx-auto w-5/6 flex-shrink-0 rounded-lg" src="{{ asset($strain->image_url) }}"
                         alt="">
                     <h3 class="mt-6 text-sm font-medium text-gray-50">{{ $strain->strain }}</h3>
                     <dl class="mt-1 flex flex-grow flex-col justify-between">
