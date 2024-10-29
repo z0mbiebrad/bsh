@@ -13,12 +13,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
+    <!-- Fathom - beautiful, simple website analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="KYEZRBCM" defer></script>
+    <!-- / Fathom -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body class="font-sans antialiased bg-black">
     <div class="min-h-screen">
-            @include('layouts.navigation')
+        @include('layouts.navigation')
 
         <!-- Page Heading -->
         @isset($header)
